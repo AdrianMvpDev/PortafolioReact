@@ -1,6 +1,6 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { Article } from './components/Article';
 import { Header } from './components/Header';
+import { Article } from './components/Article';
 import styles from './App.module.css';
 import './App.css'
 
