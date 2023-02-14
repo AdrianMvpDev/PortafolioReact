@@ -1,0 +1,21 @@
+.container_page {
+  display: flex;
+}
+::-webkit-scrollbar {
+  width: 0.8vw;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #8cdec8;
+  box-shadow: 0px 0px 25px 3px rgb(140 222 200);
+}
+::-webkit-scrollbar-track {
+  background: #2e2d2d;
+}
+html {
+  scroll-behavior: smooth;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #ffffff;
+}

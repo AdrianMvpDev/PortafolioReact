@@ -1,0 +1,123 @@
+.form {
+  backdrop-filter: blur(16px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  padding-left: 90px;
+}
+.title_form {
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.form_mail {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+.mail_container {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  gap: 10px;
+}
+.mail_container label {
+  color: #ffffff;
+}
+.mail_container input {
+  border-radius: 15px;
+  border: 1px solid #8cdec8;
+  padding: 6px 15px;
+  color: #ffffff;
+  background: transparent;
+  transition: 0.3s;
+}
+.mail_container input:focus {
+  outline: inherit;
+  border: 1px solid #ffffff;
+}
+.mail_messages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.mail_messages label {
+  color: #ffffff;
+}
+.mail_messages textarea {
+  border-radius: 15px;
+  border: 1px solid #8cdec8;
+  padding: 15px;
+  color: #ffffff;
+  background: transparent;
+  transition: 0.3s;
+  resize: inherit;
+}
+.mail_messages textarea:focus {
+  outline: inherit;
+  border: 1px solid #ffffff;
+}
+.form_mail button {
+  border: 1px solid #8cdec8;
+  background: transparent;
+  border-radius: 15px;
+  padding: 5px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form_mail button:hover {
+  background: #8cdec8;
+  color: #181818;
+  border: inherit;
+  border: 1px solid #8cdec8;
+}
+.container_modal {
+  position: relative;
+}
+.container_modal button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #8cdec8;
+  background: transparent;
+  color: #8cdec8;
+  border-radius: 560%;
+  padding: 6px;
+  max-width: 20px;
+  max-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  font-size: 14px;
+}
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  border: 2px solid #8cdec8;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background: #181818;
+  border-radius: 10px;
+  color: #ffffff;
+}
+@media (max-width: 950px) {
+  .form {
+    padding: 0px 15px 0;
+  }
+}
+@media (max-width: 600px) {
+  .form {
+    padding: 30px 15px 0;
+  }
+  .mail_container {
+    width: 100%;
+  }
+}
